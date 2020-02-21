@@ -10,6 +10,8 @@ defmodule AdventOfCode2019 do
          :ok <- IO.puts("Part:"),
          part <- IO.read(:stdio, :line) do
       case {String.trim(day), String.trim(part)} do
+        {"1", "1"} -> Day01.part1()
+        {"1", "2"} -> Day01.part2()
         _ -> IO.puts("Invalid input")
       end
     end
